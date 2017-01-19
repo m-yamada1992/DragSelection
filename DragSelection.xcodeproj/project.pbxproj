@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18E9D7CC1E064CFD0032469F /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9D7CB1E064CFD0032469F /* Cell.swift */; };
+		18E9D7CE1E0660360032469F /* DraggableCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9D7CD1E0660360032469F /* DraggableCollectionView.swift */; };
 		18F9994B1D7FCAB10038D681 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9994A1D7FCAB10038D681 /* AppDelegate.swift */; };
 		18F9994D1D7FCAB10038D681 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9994C1D7FCAB10038D681 /* ViewController.swift */; };
 		18F999501D7FCAB10038D681 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F9994E1D7FCAB10038D681 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18E9D7CB1E064CFD0032469F /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		18E9D7CD1E0660360032469F /* DraggableCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableCollectionView.swift; sourceTree = "<group>"; };
 		18F999471D7FCAB10038D681 /* DragSelection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragSelection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F9994A1D7FCAB10038D681 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18F9994C1D7FCAB10038D681 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +78,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18956F231E2E0D6E0085D194 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18F9994C1D7FCAB10038D681 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		18956F241E2E0D7B0085D194 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18E9D7CB1E064CFD0032469F /* Cell.swift */,
+				18E9D7CD1E0660360032469F /* DraggableCollectionView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		18F9993E1D7FCAB10038D681 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +118,13 @@
 		18F999491D7FCAB10038D681 /* DragSelection */ = {
 			isa = PBXGroup;
 			children = (
+				18956F231E2E0D6E0085D194 /* Controller */,
+				18956F241E2E0D7B0085D194 /* View */,
 				18F9994A1D7FCAB10038D681 /* AppDelegate.swift */,
-				18F9994C1D7FCAB10038D681 /* ViewController.swift */,
-				18F9994E1D7FCAB10038D681 /* Main.storyboard */,
 				18F999511D7FCAB10038D681 /* Assets.xcassets */,
-				18F999531D7FCAB10038D681 /* LaunchScreen.storyboard */,
 				18F999561D7FCAB10038D681 /* Info.plist */,
+				18F999531D7FCAB10038D681 /* LaunchScreen.storyboard */,
+				18F9994E1D7FCAB10038D681 /* Main.storyboard */,
 			);
 			path = DragSelection;
 			sourceTree = "<group>";
@@ -188,18 +210,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Yamada;
 				TargetAttributes = {
 					18F999461D7FCAB10038D681 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					18F9995A1D7FCAB10038D681 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 18F999461D7FCAB10038D681;
 					};
 					18F999651D7FCAB10038D681 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 18F999461D7FCAB10038D681;
 					};
 				};
@@ -256,8 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E9D7CE1E0660360032469F /* DraggableCollectionView.swift in Sources */,
 				18F9994D1D7FCAB10038D681 /* ViewController.swift in Sources */,
 				18F9994B1D7FCAB10038D681 /* AppDelegate.swift in Sources */,
+				18E9D7CC1E064CFD0032469F /* Cell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,8 +353,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -371,8 +400,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -391,6 +422,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -403,6 +435,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Yamada.DragSelection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -414,6 +447,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Yamada.DragSelection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -425,6 +459,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Yamada.DragSelectionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DragSelection.app/DragSelection";
 			};
 			name = Debug;
@@ -437,6 +472,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Yamada.DragSelectionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DragSelection.app/DragSelection";
 			};
 			name = Release;
@@ -448,6 +484,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Yamada.DragSelectionUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = DragSelection;
 			};
 			name = Debug;
@@ -459,6 +496,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Yamada.DragSelectionUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = DragSelection;
 			};
 			name = Release;
@@ -482,6 +520,7 @@
 				18F999711D7FCAB10038D681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18F999721D7FCAB10038D681 /* Build configuration list for PBXNativeTarget "DragSelectionTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +529,7 @@
 				18F999741D7FCAB10038D681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18F999751D7FCAB10038D681 /* Build configuration list for PBXNativeTarget "DragSelectionUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +538,7 @@
 				18F999771D7FCAB10038D681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
